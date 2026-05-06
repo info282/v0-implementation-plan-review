@@ -38,7 +38,7 @@ const tiers = [
   },
   {
     name: "Enterprise Solutions",
-    price: "Let&apos;s Talk",
+    price: "Let's Talk",
     description: "Full-scale transformation for growing teams",
     features: [
       "Multi-department automation",
