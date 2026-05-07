@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -18,8 +19,8 @@ export function Header() {
   }, [])
 
   const navLinks = [
-    { href: "#calculator", label: "ROI Calculator" },
-    { href: "#lead-form", label: "Get Started" }
+    { href: "#calculator", label: "Calcolatore ROI" },
+    { href: "#lead-form", label: "Inizia Ora" }
   ]
 
   return (
@@ -34,10 +35,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-primary" />
-            </div>
-            <span className="text-lg font-semibold">Thorne AI</span>
+            <Image
+              src="/cerbo-solutions-logo.png"
+              alt="Cerbo Solutions"
+              width={140}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -56,7 +61,7 @@ export function Header() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
               asChild
             >
-              <a href="#lead-form">Request Diagnostic</a>
+              <a href="#lead-form">Richiedi Diagnosi</a>
             </Button>
           </nav>
 
@@ -96,7 +101,7 @@ export function Header() {
                 asChild
               >
                 <a href="#lead-form" onClick={() => setIsMobileMenuOpen(false)}>
-                  Request Diagnostic
+                  Richiedi Diagnosi
                 </a>
               </Button>
             </nav>

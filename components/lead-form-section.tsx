@@ -49,17 +49,17 @@ export function LeadFormSection() {
     const newErrors: FormErrors = {}
     
     if (!formData.name.trim()) {
-      newErrors.name = "Name is required"
+      newErrors.name = "Il nome è obbligatorio"
     }
     
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required"
+      newErrors.email = "L'email è obbligatoria"
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email"
+      newErrors.email = "Per favore inserisci un email valida"
     }
     
     if (!formData.company.trim()) {
-      newErrors.company = "Company name is required"
+      newErrors.company = "Il nome dell'azienda è obbligatorio"
     }
     
     setErrors(newErrors)
@@ -109,13 +109,13 @@ export function LeadFormSection() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium">Only 2 Slots Remaining</span>
+              <span className="text-sm text-primary font-medium">Solo 2 Posti Disponibili</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Request Your Premium Diagnostic
+              Richiedi la Tua Diagnosi Premium
             </h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Tell us about your challenges. We&apos;ll reach out within 24 hours to schedule your strategy session.
+              Raccontaci le tue sfide. Ti contatteremo entro 24 ore per programmare la tua sessione strategica.
             </p>
           </motion.div>
 
@@ -128,10 +128,10 @@ export function LeadFormSection() {
           >
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <Label htmlFor="name">Full Name *</Label>
+                <Label htmlFor="name">Nome Completo *</Label>
                 <Input
                   id="name"
-                  placeholder="John Smith"
+                  placeholder="Giovanni Rossi"
                   value={formData.name}
                   onChange={(e) => handleChange("name", e.target.value)}
                   className={errors.name ? "border-destructive" : ""}
@@ -142,11 +142,11 @@ export function LeadFormSection() {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email">Work Email *</Label>
+                <Label htmlFor="email">Email di Lavoro *</Label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@company.com"
+                  placeholder="giovanni@azienda.it"
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   className={errors.email ? "border-destructive" : ""}
@@ -159,10 +159,10 @@ export function LeadFormSection() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <Label htmlFor="company">Company Name *</Label>
+                <Label htmlFor="company">Nome Azienda *</Label>
                 <Input
                   id="company"
-                  placeholder="Acme Inc."
+                  placeholder="Acme S.r.l."
                   value={formData.company}
                   onChange={(e) => handleChange("company", e.target.value)}
                   className={errors.company ? "border-destructive" : ""}
@@ -173,10 +173,10 @@ export function LeadFormSection() {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="role">Your Role</Label>
+                <Label htmlFor="role">Il Tuo Ruolo</Label>
                 <Input
                   id="role"
-                  placeholder="CEO, COO, VP Operations..."
+                  placeholder="CEO, COO, VP Operazioni..."
                   value={formData.role}
                   onChange={(e) => handleChange("role", e.target.value)}
                 />
@@ -184,10 +184,10 @@ export function LeadFormSection() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="challenge">What&apos;s your biggest operational challenge?</Label>
+              <Label htmlFor="challenge">Quale è la tua più grande sfida operativa?</Label>
               <Textarea
                 id="challenge"
-                placeholder="Tell us about the manual processes, bottlenecks, or inefficiencies that are holding your team back..."
+                placeholder="Raccontaci i processi manuali, i colli di bottiglia, o le inefficienze che stanno ostacolando il tuo team..."
                 value={formData.challenge}
                 onChange={(e) => handleChange("challenge", e.target.value)}
                 rows={4}
@@ -200,17 +200,17 @@ export function LeadFormSection() {
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-[1.02] transition-all duration-300"
             >
               {isSubmitting ? (
-                "Submitting..."
+                "Invio in corso..."
               ) : (
                 <>
-                  Request Your Diagnostic
+                  Richiedi la Tua Diagnosi
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </>
               )}
             </Button>
 
             <p className="text-center text-sm text-muted-foreground">
-              By submitting, you agree to our Privacy Policy. We&apos;ll never share your information.
+              Inviando il modulo accetti la nostra Politica sulla Privacy. Non condivideremo mai le tue informazioni.
             </p>
           </motion.form>
         </div>
@@ -223,25 +223,25 @@ export function LeadFormSection() {
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <CheckCircle2 className="w-8 h-8 text-primary" />
             </div>
-            <DialogTitle className="text-2xl">Thank You!</DialogTitle>
+            <DialogTitle className="text-2xl">Grazie!</DialogTitle>
             <DialogDescription className="text-base">
-              Your request has been received. We&apos;ll review your submission and reach out within 24 hours to schedule your Premium Diagnostic session.
+              La tua richiesta è stata ricevuta. Esamineremo il tuo modulo e ti contatteremo entro 24 ore per programmare la tua sessione di Diagnosi Premium.
             </DialogDescription>
           </DialogHeader>
           <div className="pt-4 space-y-4">
             <div className="p-4 bg-secondary/50 rounded-lg">
-              <p className="text-sm font-medium mb-1">What happens next?</p>
+              <p className="text-sm font-medium mb-1">Cosa succede ora?</p>
               <ul className="text-sm text-muted-foreground space-y-1 text-left">
-                <li>1. We&apos;ll review your submission</li>
-                <li>2. A team member will reach out via email</li>
-                <li>3. We&apos;ll schedule your strategy call</li>
+                <li>1. Esamineremo il tuo modulo</li>
+                <li>2. Un membro del team ti contatterà via email</li>
+                <li>3. Programmeremo la tua chiamata strategica</li>
               </ul>
             </div>
             <Button
               onClick={() => setShowSuccess(false)}
               className="w-full bg-primary hover:bg-primary/90"
             >
-              Close
+              Chiudi
             </Button>
           </div>
         </DialogContent>

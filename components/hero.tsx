@@ -22,7 +22,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-8"
         >
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-primary font-medium">Only 2 Slots Remaining This Quarter</span>
+          <span className="text-sm text-primary font-medium">Solo 2 Posti Disponibili Questo Trimestre</span>
         </motion.div>
 
         {/* Main Headline */}
@@ -32,8 +32,8 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance"
         >
-          Stop Drowning in{" "}
-          <span className="text-primary">Operational Chaos</span>
+          Smetti di Annegare nel{" "}
+          <span className="text-primary">Caos Operativo</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -43,8 +43,8 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 text-pretty"
         >
-          Bespoke AI automation solutions that eliminate the manual work bleeding your time and profit. 
-          Built for mid-market SaaS founders who refuse to settle for band-aid fixes.
+          Soluzioni di automazione IA su misura che eliminano il lavoro manuale che consuma il tuo tempo e profitti. 
+          Costruito per fondatori di SaaS di medio mercato che rifiutano soluzioni temporanee.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -60,7 +60,7 @@ export function Hero() {
             asChild
           >
             <a href="#lead-form">
-              Request Your Premium Diagnostic
+              Richiedi la Tua Diagnosi Premium
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
@@ -70,7 +70,7 @@ export function Hero() {
             className="border-border hover:bg-secondary px-8 py-6 text-lg"
             asChild
           >
-            <a href="#calculator">See Your Potential Savings</a>
+            <a href="#calculator">Vedi i Tuoi Risparmi Potenziali</a>
           </Button>
         </motion.div>
 
@@ -81,7 +81,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-12 text-sm text-muted-foreground"
         >
-          Trusted by founders at companies processing $1M-$50M ARR
+          Considerato affidabile dai fondatori di aziende che processano €1M-€50M ARR
         </motion.p>
       </div>
     </section>

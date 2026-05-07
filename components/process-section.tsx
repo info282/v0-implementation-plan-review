@@ -8,26 +8,26 @@ const steps = [
   {
     icon: FileSearch,
     step: "01",
-    title: "Discovery Call",
-    description: "A 30-minute conversation to understand your pain points, goals, and current tech stack. No pressure, just clarity."
+    title: "Chiamata di Scoperta",
+    description: "Una conversazione di 30 minuti per comprendere i tuoi punti critici, obiettivi e stack tecnologico attuale. Niente pressioni, solo chiarezza."
   },
   {
     icon: Lightbulb,
     step: "02",
-    title: "Premium Diagnostic",
-    description: "Deep-dive audit of your operations. We identify every automation opportunity and quantify the potential impact."
+    title: "Diagnosi Premium",
+    description: "Audit approfondito delle tue operazioni. Identifichiamo ogni opportunità di automazione e quantifichiamo l'impatto potenziale."
   },
   {
     icon: Wrench,
     step: "03",
-    title: "Custom Roadmap",
-    description: "Receive a prioritized action plan with clear timelines, expected ROI, and implementation recommendations."
+    title: "Roadmap Personalizzata",
+    description: "Ricevi un piano d'azione prioritizzato con timeline chiare, ROI previsto e raccomandazioni di implementazione."
   },
   {
     icon: Rocket,
     step: "04",
-    title: "Implementation",
-    description: "Choose to implement yourself with our roadmap, or let us build and deploy the solutions for you."
+    title: "Implementazione",
+    description: "Scegli di implementare da solo con la nostra roadmap, oppure lascia che costruiamo e distribuiamo le soluzioni per te."
   }
 ]
 
@@ -45,10 +45,10 @@ export function ProcessSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            How It Works
+            Come Funziona
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            A straightforward process designed to respect your time while delivering maximum insight.
+            Un processo diretto progettato per rispettare il tuo tempo mentre offre il massimo insight.
           </p>
         </motion.div>
 
