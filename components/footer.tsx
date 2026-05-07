@@ -14,22 +14,22 @@ export function Footer() {
             <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-primary" />
             </div>
-            <span className="text-lg font-semibold">Thorne AI</span>
+            <span className="text-lg font-semibold">Cerbo Solutions</span>
           </div>
 
           {/* Links */}
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#calculator" className="hover:text-foreground transition-colors">
-              ROI Calculator
+              Calcolatore ROI
             </a>
             <a href="#lead-form" className="hover:text-foreground transition-colors">
-              Get Started
+              Inizia Ora
             </a>
           </nav>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Thorne AI. All rights reserved.
+            &copy; {currentYear} Cerbo Solutions. Tutti i diritti riservati.
           </p>
         </div>
       </div>

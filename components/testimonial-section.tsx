@@ -6,22 +6,22 @@ import { Quote } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "Thorne AI completely transformed our onboarding process. What used to take our team 6 hours per client now takes 20 minutes. The ROI was obvious within the first month.",
+    quote: "Cerbo Solutions ha completamente trasformato il nostro processo di onboarding. Quello che prima richiedeva 6 ore al nostro team per cliente ora ne richiede solo 20 minuti. Il ROI è stato evidente nel primo mese.",
     name: "Sarah Chen",
     title: "COO, DataFlow Analytics",
-    metric: "95% time reduction"
+    metric: "95% riduzione tempo"
   },
   {
-    quote: "I was skeptical at first, but the Premium Diagnostic alone paid for itself. They found automation opportunities we had completely overlooked for years.",
+    quote: "Ero scettico all'inizio, ma la Diagnosi Premium da sola si è pagata da sola. Hanno trovato opportunità di automazione che avevamo completamente trascurato per anni.",
     name: "Marcus Rodriguez",
-    title: "Founder, ScaleOps",
-    metric: "$180K saved annually"
+    title: "Fondatore, ScaleOps",
+    metric: "€180K risparmiati annualmente"
   },
   {
-    quote: "The attention to detail is unmatched. They didn&apos;t just automate our workflows—they redesigned them to be smarter. Our error rate dropped to near zero.",
+    quote: "L'attenzione ai dettagli è incomparabile. Non hanno solo automatizzato i nostri workflow, li hanno riprogettati per essere più intelligenti. Il nostro tasso di errore è sceso quasi a zero.",
     name: "Jennifer Park",
     title: "VP Operations, TechBridge",
-    metric: "99.8% accuracy"
+    metric: "99,8% accuratezza"
   }
 ]
 
@@ -39,10 +39,10 @@ export function TestimonialSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            What Founders Are Saying
+            Cosa Dicono i Fondatori
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Real results from founders who took the leap.
+            Risultati reali da fondatori che hanno fatto il salto.
           </p>
         </motion.div>
 

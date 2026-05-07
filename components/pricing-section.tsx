@@ -7,48 +7,48 @@ import { Check, ArrowRight } from "lucide-react"
 
 const tiers = [
   {
-    name: "Premium Diagnostic",
-    price: "$1,500",
-    description: "One-time comprehensive audit of your operations",
+    name: "Diagnosi Premium",
+    price: "€1.500",
+    description: "Audit completo e unico delle tue operazioni",
     features: [
-      "Full operational workflow audit",
-      "Custom automation roadmap",
-      "ROI projection for each opportunity",
-      "Priority recommendation ranking",
-      "90-minute strategy session",
-      "NDA-protected deliverables"
+      "Audit completo del workflow operativo",
+      "Roadmap di automazione personalizzata",
+      "Proiezione ROI per ogni opportunità",
+      "Ranking prioritario delle raccomandazioni",
+      "Sessione strategica di 90 minuti",
+      "Deliverables protetti da NDA"
     ],
-    cta: "Request Diagnostic",
+    cta: "Richiedi Diagnosi",
     highlighted: true
   },
   {
-    name: "Ongoing Partnership",
-    price: "Custom",
-    description: "Monthly retainer for continuous optimization",
+    name: "Partnership Continua",
+    price: "Personalizzato",
+    description: "Retainer mensile per l'ottimizzazione continua",
     features: [
-      "Everything in Premium Diagnostic",
-      "Implementation support",
-      "Monthly optimization reviews",
-      "Dedicated Slack channel",
-      "Priority bug fixes",
-      "Quarterly strategy sessions"
+      "Tutto nella Diagnosi Premium",
+      "Supporto implementazione",
+      "Revisioni di ottimizzazione mensili",
+      "Canale Slack dedicato",
+      "Bug fix prioritari",
+      "Sessioni strategiche trimestrali"
     ],
-    cta: "Discuss Partnership",
+    cta: "Discuti Partnership",
     highlighted: false
   },
   {
-    name: "Enterprise Solutions",
-    price: "Let's Talk",
-    description: "Full-scale transformation for growing teams",
+    name: "Soluzioni Enterprise",
+    price: "Parliamone",
+    description: "Trasformazione su larga scala per team in crescita",
     features: [
-      "Multi-department automation",
-      "Custom AI model training",
-      "API integration development",
-      "On-site implementation",
-      "Team training sessions",
-      "24/7 support SLA"
+      "Automazione multi-dipartimento",
+      "Training di modelli IA personalizzati",
+      "Sviluppo integrazione API",
+      "Implementazione on-site",
+      "Sessioni di training per il team",
+      "SLA supporto 24/7"
     ],
-    cta: "Contact Us",
+    cta: "Contattaci",
     highlighted: false
   }
 ]
@@ -67,10 +67,10 @@ export function PricingSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            Investment Options
+            Opzioni di Investimento
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Choose the engagement level that matches your needs. Every engagement starts with understanding your unique challenges.
+            Scegli il livello di engagement che si adatta alle tue esigenze. Ogni engagement inizia con la comprensione delle tue sfide uniche.
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export function PricingSection() {
             >
               {tier.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-                  Most Popular
+                  Più Popolare
                 </div>
               )}
               
@@ -97,7 +97,7 @@ export function PricingSection() {
                 <h3 className="text-xl font-semibold mb-2">{tier.name}</h3>
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-4xl font-bold">{tier.price}</span>
-                  {tier.price === "$1,500" && <span className="text-muted-foreground">/audit</span>}
+                  {tier.price === "€1.500" && <span className="text-muted-foreground">/audit</span>}
                 </div>
                 <p className="text-muted-foreground text-sm">{tier.description}</p>
               </div>

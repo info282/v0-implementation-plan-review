@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Thorne AI | Premium AI Automation Consulting',
-  description: 'Bespoke AI automation solutions for mid-market SaaS founders. Transform your operations with intelligent workflow automation.',
+  title: 'Cerbo Solutions | Consulenza Premium in Automazione IA',
+  description: 'Soluzioni di automazione IA su misura per fondatori di SaaS. Trasforma le tue operazioni con automazione intelligente dei workflow.',
   generator: 'v0.app',
   icons: {
     icon: [

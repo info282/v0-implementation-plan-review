@@ -18,8 +18,8 @@ export function Header() {
   }, [])
 
   const navLinks = [
-    { href: "#calculator", label: "ROI Calculator" },
-    { href: "#lead-form", label: "Get Started" }
+    { href: "#calculator", label: "Calcolatore ROI" },
+    { href: "#lead-form", label: "Inizia Ora" }
   ]
 
   return (
@@ -37,7 +37,7 @@ export function Header() {
             <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-primary" />
             </div>
-            <span className="text-lg font-semibold">Thorne AI</span>
+            <span className="text-lg font-semibold">Cerbo Solutions</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -56,7 +56,7 @@ export function Header() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
               asChild
             >
-              <a href="#lead-form">Request Diagnostic</a>
+              <a href="#lead-form">Richiedi Diagnosi</a>
             </Button>
           </nav>
 
@@ -96,7 +96,7 @@ export function Header() {
                 asChild
               >
                 <a href="#lead-form" onClick={() => setIsMobileMenuOpen(false)}>
-                  Request Diagnostic
+                  Richiedi Diagnosi
                 </a>
               </Button>
             </nav>
