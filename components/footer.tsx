@@ -1,6 +1,6 @@
 "use client"
 
-import { Sparkles } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,12 +10,15 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo/Brand */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-primary" />
-            </div>
-            <span className="text-lg font-semibold">Cerbo Solutions</span>
-          </div>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/cerbo-solutions-logo.png"
+              alt="Cerbo Solutions"
+              width={140}
+              height={40}
+              className="h-8 w-auto"
+            />
+          </a>
 
           {/* Links */}
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">

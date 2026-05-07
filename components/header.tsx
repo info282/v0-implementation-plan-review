@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,10 +35,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-primary" />
-            </div>
-            <span className="text-lg font-semibold">Cerbo Solutions</span>
+            <Image
+              src="/cerbo-solutions-logo.png"
+              alt="Cerbo Solutions"
+              width={140}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Navigation */}
